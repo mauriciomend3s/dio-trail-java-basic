@@ -33,10 +33,10 @@ public class Operadores {
          * boolean variavel = false;
          * System.out.println(!variavel);
          */
-        int a, b;
+     //   int a, b;
 
-        a = 5;
-        b = 6;
+     //   a = 5;
+     //   b = 6;
         // String resultado="";
         /*
          * if(a==b){
@@ -48,9 +48,11 @@ public class Operadores {
          * System.out.println(resultado);
          */
         /////////////
-
+/* 
         String resultado = a == b ? "verdadeiro" : "falso";
         System.out.println(resultado);
+*/
+       
 
     }
 
