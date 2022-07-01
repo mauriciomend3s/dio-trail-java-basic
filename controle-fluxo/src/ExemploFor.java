@@ -5,6 +5,6 @@ public class ExemploFor {
             carneiras = i;
 
         }
-        System.out.println("Contei "+carneiras+" carneiras!");
+       
     }
 }
