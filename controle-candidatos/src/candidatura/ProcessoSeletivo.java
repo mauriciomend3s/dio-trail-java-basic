@@ -11,6 +11,7 @@ public class ProcessoSeletivo {
          * analisarCandidato(2000.0);
          */
         selecaoCandidatos();
+        imprirSelecionados();
 
     }
 
@@ -30,9 +31,9 @@ public class ProcessoSeletivo {
                     .println("O candidato " + candidato + "solicitou este " + salarioPretendido + " valor de salário!");
             if (salarioBase >= salarioPretendido) {
                 System.out.println("O candidato " + candidato + " foi selecionado para a vaga!");
-                candidatosSelecionados++;//limitador incrementa
+                candidatosSelecionados++;// limitador incrementa
             }
-            candidatoAtual++; //indice incrementa
+            candidatoAtual++; // indice incrementa
         }
     }
 
@@ -49,6 +50,14 @@ public class ProcessoSeletivo {
 
     static double valorPretendido() {
         return ThreadLocalRandom.current().nextDouble(1800, 2200);
+    }
+
+    static void imprirSelecionados() {
+        String[] candidatos = { "FELIPE", "MARCIA", "JULIA", "PAULO", "AUGUSTO" };
+        for (int i = 0; i < candidatos.length; i++) {
+            System.out.println("Candidato " + candidatos[i] + "aprovado!");
+
+        }
     }
 
 }
